@@ -1,16 +1,22 @@
 
 
 window.onload = () => {
-    const userInput = document.getElementById('list-data');    
+// Part I here
     const setTextButton = document.getElementById('set-text');
-
-    setTextButton.onclick = () => {
-       userInput.value = 'The first item for my list';
+    const userInput = document.getElementById('list-data');
+    const listButton = document.getElementById('add-to-list');
+    
+ // Part II here
+const elfCode = {
+    appendToList: (list, value) => {
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(value));
+        list.appendChild(li);
     }
-    const elfCode = {
-        appendToList: (list, value) => {
-            const li = document.createElement("li");
-            li.appendChild(document.createTextNode(value));
-            list.appendChild(li);
-        }
-    }}
+}
+    // Part III here
+listButton.onclick = () => {
+    const myList = document.getElementById('my-list');
+    elfCode.appendToList(myList, userInput.value);
+}
+}
