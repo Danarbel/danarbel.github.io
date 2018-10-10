@@ -8,14 +8,14 @@ const elfCode = {
     appendToList: (list, value) => {
         const li = document.createElement("li");
         li.appendChild(document.createTextNode(value));
-        li.appendChild(li);
+        list.appendChild(li);
     }
 }
     // Part III here
 
 
 listButton.onclick = () => {
-    const myList = document.getElementById('my-list');
+    const myList = document.getElementById('list-data');
     elfCode.appendToList(myList, userInput.value);
 }
 }
