@@ -1,3 +1,17 @@
+
+body {
+    font-size: 133%;
+    font-family: sans-serif;
+    background-color:black
+  }
+  h1 {
+    color:palevioletred ;
+   
+    font: italic 180% fantasy;
+
+    text-align: center
+   }
+
 button {
     background-color:burlywood;
     border: 2px blueviolet;
