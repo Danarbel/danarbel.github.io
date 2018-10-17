@@ -1,17 +1,24 @@
-header p {
+header  {
     font-weight: bold;
-    color: salmon ;
+    color:whitesmoke ;
+    background-color: burlywood;
+    text-align: center;
 }
 .byline {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     font-size: medium;
 
 }
-main {background-color:papayawhip }
+main {background-color:papayawhip;
+font-size: 120% }
 
 footer {background-color: burlywood;
 text-align: center;
+font-size: 120%;
 }
 figure.left {
     float: left;
+}
+h1 {font-size: 150% ;
+
 }
