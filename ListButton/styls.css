@@ -12,10 +12,52 @@ body {
     text-align: left
    }
 
+   header {
+    background-color: rgb(224, 162, 224);
+    text-align: center;
+}
 button {
     background-color:burlywood;
     border: 2px blueviolet;
     color: rgb(19, 22, 15);
     text-align: center;    
     font-size: 16px;
+}
+button.test-button {
+    padding: 25px;
+    border: 15px rgb(205, 50, 140) solid;
+    border-radius: 35px;
+}
+
+button.test-button:hover {
+    background-color: bisque;
+    border-color: white;
+}
+
+button.margin-button {
+    margin: 25px;
+}
+
+div#margin-div {
+    border: 1px black solid;
+    display: inline-block;
+}
+
+aside {background-color: rgb(110, 94, 212);
+    color: beige;
+    font-size: 120%;
+    font: italic;
+float: right;
+width: 33%;
+padding: 5px;
+margin-left: 8px;
+margin-right: 8px;
+border:1px black;
+border-radius: 8px;
+
+}
+
+footer {
+    background-color: rgb(224, 162, 224);
+    text-align: center;
 }
