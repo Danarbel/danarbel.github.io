@@ -44,4 +44,25 @@ nav li {
 }
 .intro {text-align: center;
 }
-  
+
+
+aside {background-color: rgb(243, 186, 212);
+    color: purple;
+    font-size: 120%;
+    font: italic;
+float: right;
+width: 33%;
+padding: 5px;
+margin-left: 8px;
+margin-right: 8px;
+border:1px black;
+border-radius: 8px;
+
+}
+.types {text-align: center
+
+}
+
+h2{text-align: center
+
+}
