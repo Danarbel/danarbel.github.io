@@ -59,8 +59,10 @@ border:1px black;
 border-radius: 8px;
 
 }
-.types {text-align: center
-
+ul#types {text-align: center;
+   
+        list-style-type: none;
+        
 }
 
 h2{text-align: center;
