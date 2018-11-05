@@ -16,3 +16,15 @@ body {
    footer {
      text-align: center
    }
+
+   header  {
+    font-weight: bold;
+    color:palevioletred ;
+    background-color: rgb(80, 82, 83);
+    text-align: center;
+}
+
+footer { color:palevioletred ;
+  background-color: rgb(80, 82, 83);
+  text-align: center;}
+  
