@@ -1,40 +1,15 @@
-var myObject01 = {
-    firstName: "Susan",
-    lastName: "Smith"
-};
-
-var myObject02 = {
-    firstName: "Susan",
-    lastName: "Smith",
-    fullName: function() {
-        'use strict';
-        return this.firstName + ' ' + this.lastName;
-    }
-};
-
-var myObject03 = {
-    a: 1,
-    b: 2,
-    c: 'three',
-    addMe: function() {
-        'use strict';
-        return this.a + this.b;
-    }
-};
-
-var myObject04 = {
-    a: 1,
-    b: 2,
-    c: 'three',
-};
-
-myObject04.addMe = function() {
-    'use strict';
-    return this.a + this.b;
+var Test01 = function()
+{
+   var name = "Test01";
 }
 
-console.log(myObject01.firstName);
-console.log(myObject01.lastName);
-console.log(myObject02.fullName());
-console.log(myObject03.addMe());
-console.log(myObject04.addMe());
+Test01.prototype.description="This is a test object";
+
+var Test02 = function()
+{
+    var test01 = new Test01();
+    $("#Description01").html(test01.description);
+    $("#Name01").html(test01.name);
+    console.log(Test01.name)
+}
+console.log(Test01.name)
