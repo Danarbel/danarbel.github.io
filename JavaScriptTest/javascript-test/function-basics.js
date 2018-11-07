@@ -2,20 +2,25 @@ window.onload=()=> {
  
 
     const functionCalls = document.getElementById('function-calls');
+    const CallUserInput = document.getElementById('call-user-input');
+    
 
     functionCalls.onclick=()=> 
     {
-      simpleFunction();
-      const returnValue =functionReturn();
+      simpleFunction(); 
+      functionParameters("Many functions take parameters.");
+      functionReturn("Many functions return values");
+
+      const returnValue =functionReturn("Many functions return values");
       console.log (returnValue);
-      functionParameters(a);
      
-     
+             }
     }
-    
-
-    }
-
+CallUserInput.onclick=()=> {
+    const UserInputParagraph=document.getElementById("show-user-input");
+    const UserInput =document.getElementById("user-input");
+UserInputParagraph.textContent=UserInput.value;
+}
 
 //function that defines one varibale and prints it
 function simpleFunction(){
@@ -28,12 +33,15 @@ simpleFunctionParagraph.textContent= displaytext;
 //fuction that get one var and prints it 
 function  functionParameters(a){
     var functionParameters =" functionParameters";
+    const functionparametersParagraph = document.getElementById("function-parameters");
+    functionparametersParagraph.textContent= a;
     console.log(a)
 }
 
 //function that returns a string
 function functionReturn (){
     return "Many functions return values";
+    
 }
 
 

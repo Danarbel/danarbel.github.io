@@ -1,2 +1,6 @@
-var simpleObject = {};
-var simpleObject = new Object();
+var simpleObject = {
+    sayName : function() {
+        'use strict';
+        console.log('"Simple Object.');
+    }
+};
