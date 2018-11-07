@@ -8,6 +8,8 @@ window.onload=()=> {
       simpleFunction();
       const returnValue =functionReturn();
       console.log (returnValue);
+      functionParameters(a);
+     
      
     }
     
@@ -38,9 +40,9 @@ function functionReturn (){
 
 //function with paramater call
 a = "Many functions take parameters."
-functionParameters(a)
 
-//print the return value of the function call
+
+
 
 //simpleFunction()
 
