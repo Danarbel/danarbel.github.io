@@ -6,8 +6,14 @@ window.onload=()=> {
     functionCalls.onclick=()=> 
     {
       simpleFunction();
+      const returnValue =functionReturn();
+      console.log (returnValue);
+     
     }
-}
+    
+
+    }
+
 
 //function that defines one varibale and prints it
 function simpleFunction(){
@@ -35,7 +41,7 @@ a = "Many functions take parameters."
 functionParameters(a)
 
 //print the return value of the function call
-console.log(functionReturn());
+
 //simpleFunction()
 
 
