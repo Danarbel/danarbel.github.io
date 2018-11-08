@@ -4,3 +4,4 @@ var simpleObject = {
         console.log('"Simple Object.');
     }
 };
+

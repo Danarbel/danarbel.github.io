@@ -3,7 +3,7 @@ window.onload=()=> {
 
     const functionCalls = document.getElementById('function-calls');
     const CallUserInput = document.getElementById('call-user-input');
-    
+
 
     functionCalls.onclick=()=> 
     {
@@ -11,16 +11,17 @@ window.onload=()=> {
       functionParameters("Many functions take parameters.");
       functionReturn("Many functions return values");
 
-      const returnValue =functionReturn("Many functions return values");
+      const returnValue=functionReturn("Many functions return values");
       console.log (returnValue);
      
              }
-    }
+    
+ 
 CallUserInput.onclick=()=> {
     const UserInputParagraph=document.getElementById("show-user-input");
     const UserInput =document.getElementById("user-input");
 UserInputParagraph.textContent=UserInput.value;
-}
+}}
 
 //function that defines one varibale and prints it
 function simpleFunction(){
