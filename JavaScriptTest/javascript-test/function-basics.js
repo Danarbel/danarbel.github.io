@@ -43,12 +43,10 @@ function  functionParameters(a){
 function functionReturn (){
     return "Many functions return values";
     
+    
 }
 
 
-
-//function with paramater call
-a = "Many functions take parameters."
 
 
 
