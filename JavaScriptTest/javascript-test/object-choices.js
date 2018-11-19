@@ -1,46 +1,47 @@
+
 window.onload = () => {
-    const displayFullName = document.getElementById("fullName");
-    const getFullName = document.getElementById("full-name")
-    getFullName.onclick = () => {
-        displayFullName.textContent = myObject.fullName();
+
+    const simpleObjectAction = document.getElementById("simple-object-action");
+    const simpleObjectDisplay = document.getElementById("simple-object-display");
+    simpleObjectAction.onclick = () => {
+        simpleObjectDisplay.textContent = simpleObject.sayName();
     }
-    const getNamesButton = document.getElementById("get-names");
-    const displayName = document.getElementById("name");
-    getNamesButton.onclick = () => {
-        displayName.textContent = myObject.getname();
+    const functionObjectAction = document.getElementById("function-object-action");
+    const functionObjectDisplay = document.getElementById("function-object-display");
+    functionObjectAction.onclick = () => {
+        functionObjectDisplay.textContent = privateFunction();
+    }
+    const customClassAction = document.getElementById("custom-class-action");
+    const costumeClassDisplay = document.getElementById("custom-class-display");
+    customClassAction.onclick = () => {
+        costumeClassDisplay.textContent = customClass.sayName();
     }
 
-}
-
-
-
-
-const myObject = {
-    firstName: "Dana",
-    lastName: "Arbel",
-    getname: function() {
-        return this.firstName + " " + this.lastName;
-    }
-}
-
-myObject.fullName = function() {
-    return this.firstName + " "  + this.lastName;
-}
-console.log(myObject.firstName + " " + myObject.lastName);
-console.log(myObject.getname());
-console.log(myObject.fullName());
-
-const functionObject = new FunctionObject
-const FunctionObject = () => {
-    console.log("my function object");
-    const getName = () => {
-        return "Function Object";
-
-    }
-    console.log(getName());
-    functionObject.prototype.getFullName = () => {
-        return "hi";
+simpleObject = {
+    sayName: function() {
+        console.log("Simple Object");
+        return "Simple Object";
     }
 }
-functionObject();
-console.log(getFullName());
+simpleObject.dynamicMethod = function() {
+    console.log("Dynamic Method");
+    return "Dynamic Method";
+}
+
+function privateFunction() {
+    sayName = function() {
+        console.log("Private Function")
+        return "Private Function";
+    }
+    return sayName();
+}
+class CustomClass {
+    sayName() {
+        console.log("Custom Class")
+        return "Custom Class";
+    }
+
+
+}
+}
+ custom = new CustomClass; 
