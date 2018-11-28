@@ -1,7 +1,7 @@
 header  {
     font-weight: bold;
     color:whitesmoke ;
-    background-color: burlywood;
+    background-color: rgb(121, 114, 114);
     text-align: center;
 }
 .byline {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -9,11 +9,12 @@ header  {
     font-size: medium;
 
 }
-main {background-color:papayawhip;
+main {background-color:rgb(8, 8, 7);
 font-size: 120%;
-text-align: left; }
+text-align: left; 
+color: beige}
 
-footer {background-color: burlywood;
+footer {background-color: rgb(121, 114, 114);
 text-align: center;
 font-size: 120%;
 }
@@ -21,6 +22,7 @@ figure.left {
     float: left;
 }
 h1 {font-size: 150% ;
+    
 
 }
 
@@ -47,7 +49,7 @@ nav li {
 
 
 aside {background-color: rgb(243, 186, 212);
-    color: purple;
+    color: rgb(83, 72, 83);
     font-size: 120%;
     font: italic;
 float: right;
@@ -55,7 +57,7 @@ width: 33%;
 padding: 5px;
 margin-left: 8px;
 margin-right: 8px;
-border:1px black;
+border:1px rgb(238, 230, 230);
 border-radius: 8px;
 
 }
@@ -66,7 +68,7 @@ ul#types {text-align: center;
 }
 
 h2{text-align: center;
-    color: rgb(248, 148, 66);
+    color: rgb(238, 130, 175);
 
 }
 
@@ -82,6 +84,6 @@ figure{
 
 button {
     padding: 10px;
-    border: 5px orange solid;
+    border: 5px pink solid;
     border-radius: 15px;
 }
