@@ -14,6 +14,7 @@ window.onload=()=> {
             showChoice(value);
         }
     });
+}
     
     let currentClass = null;
     
@@ -25,8 +26,6 @@ window.onload=()=> {
         }
         currentClass = className;
         element.classList.add(className);
-    }
-}
 
 function showChoice(value){
    alert(value);
@@ -34,5 +33,5 @@ function showChoice(value){
    const userDisplay = document.getElementById('user-choice');
    userDisplay.textContent = value; 
 
-};
+};}
 
