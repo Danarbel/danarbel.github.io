@@ -6,7 +6,7 @@ window.onload=()=> {
     myForm.addEventListener('submit', (event) => {
         event.preventDefault();
         const value = document.querySelector('input[name="sorter"]:checked').value;
-        if (value.toLowerCase() === 'green') {
+        if (value.toLowerCase() === 'blue') {
             setColor("blueBackground");
             showChoice(value);
         } else {
@@ -27,11 +27,7 @@ window.onload=()=> {
         currentClass = className;
         element.classList.add(className);
 
-function showChoice(value){
-   alert(value);
-   console.log(value);
-   const userDisplay = document.getElementById('user-choice');
-   userDisplay.textContent = value; 
 
-};}
+};
+    
 
