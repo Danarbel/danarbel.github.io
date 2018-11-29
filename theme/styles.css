@@ -10,7 +10,7 @@ header  {
 
 }
 main {background-color:papayawhip;
-font-size: 120%;
+font-size: 140%;
 text-align: left; }
 
 footer {background-color: burlywood;
@@ -50,13 +50,13 @@ aside {background-color: rgb(243, 186, 212);
     color: purple;
     font-size: 120%;
     font: italic;
-float: right;
-width: 33%;
-padding: 5px;
-margin-left: 8px;
-margin-right: 8px;
-border:1px black;
-border-radius: 8px;
+    float: right;
+    width: 33%;
+    padding: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border:1px black;
+    border-radius: 8px;
 
 }
 ul#types {text-align: center;
@@ -75,10 +75,11 @@ h2{text-align: center;
 }
 
 figure{
-    height: "300";
-    width: "400";
+    height: "200";
+    width: "300";
     width: 90%;
 }
+  
 
 button {
     padding: 10px;
@@ -86,10 +87,16 @@ button {
     border-radius: 15px;
 }
 
-a link {
-    background-color: rgb(250, 225, 229)
+a:link {
+ color: rgb(122, 109, 105)
 }
 
-a :visited {
-    color: whitesmoke
+a:visited {
+    color: rgb(243, 55, 133)
+    
+}
+
+img#me{
+    max-width: 50%;
+    height: auto;
 }
