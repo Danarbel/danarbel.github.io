@@ -24,7 +24,7 @@ window.onload = () => {
         const techLanguagePopularityDisplay= document.getElementById ('tech-language-popularity-display');
         for (let techLanguagePopularity of techlanguagePopularity) {
             const li = document.createElement("li");
-            li.appendChild(document.createTextNode(techLanguagePopularity.language ,getRank(techLanguagePopularity)));
+            li.appendChild(document.createTextNode(techLanguagePopularity.language + ' ' + getRank(techLanguagePopularity)));
             techLanguagePopularityDisplay.appendChild(li);
    } 
 }
